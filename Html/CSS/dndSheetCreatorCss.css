@@ -88,7 +88,7 @@
   align-content: center;
   margin: 0;
   height: 100vh;
-  background-image: url(https://wallpapers.com/images/featured-full/dnd-mn5hj4u8eei8s6wf.jpg);
+  background-image: url(../Images/mainPageBackground.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -160,7 +160,7 @@
 /*Class Part starts here*/
 #classSelect2014{
   display: grid;
-  background-image: url(https://www.tribality.com/wp-content/uploads/2019/01/dungeons_and_dragons_party_by_uncannyknack-d7j7l0r1-750x375.jpg);
+  background-image: url(../Images/classBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -172,7 +172,7 @@
 /*Species Part starts here*/
 #speciesSelect2014{
   display: grid;
-  background-image: url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/dungeons-dragons-25-best-playable-races-from-5e-expansions.jpg?q=70&fit=crop&w=1600&h=1100&dpr=1);
+  background-image: url(../Images/speciesBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -184,7 +184,7 @@
 /*Stats Part starts here*/
 #statsSelect2014{
   display: grid;
-  background-image: url(https://static0.thegamerimages.com/wordpress/wp-content/uploads/2024/05/you-come-to-the-gnoll-camp-by-billy-christian-1.jpg?q=49&fit=crop&w=825&dpr=2);
+  background-image: url(../Images/statsBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -196,7 +196,7 @@
 /*Origin Part starts here*/
 #originSelect2014{
   display: grid;
-  background-image: url(https://i0.wp.com/nerdarchy.com/wp-content/uploads/2021/02/All-that-remains-REVISED-300dpi-print.jpg?resize=1024%2C726&ssl=1);
+  background-image: url(../Images/originBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -208,7 +208,7 @@
 /*Origin Part starts here*/
 #infoSelect2014{
   display: grid;
-  background-image: url(https://preview.redd.it/art-commission-high-elf-cleric-mistle-relaxing-v0-t9572rxthy281.jpg?width=1080&crop=smart&auto=webp&s=799e0f6836552ee21c61ec34c6fd86215d75770d);
+  background-image: url(../Images/infoBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -221,7 +221,7 @@
 /*Class Part starts here*/
 #classSelect2024{
   display: grid;
-  background-image: url(https://www.tribality.com/wp-content/uploads/2019/01/dungeons_and_dragons_party_by_uncannyknack-d7j7l0r1-750x375.jpg);
+  background-image: url(../Images/classBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -233,7 +233,7 @@
 /*Species Part starts here*/
 #speciesSelect2024{
   display: grid;
-  background-image: url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/dungeons-dragons-25-best-playable-races-from-5e-expansions.jpg?q=70&fit=crop&w=1600&h=1100&dpr=1);
+  background-image: url(../Images/speciesBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -245,7 +245,7 @@
 /*Stats Part starts here*/
 #statsSelect2024{
   display: grid;
-  background-image: url(https://static0.thegamerimages.com/wordpress/wp-content/uploads/2024/05/you-come-to-the-gnoll-camp-by-billy-christian-1.jpg?q=49&fit=crop&w=825&dpr=2);
+  background-image: url(../Images/statsBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -257,7 +257,7 @@
 /*Origin Part starts here*/
 #originSelect2024{
   display: grid;
-  background-image: url(https://i0.wp.com/nerdarchy.com/wp-content/uploads/2021/02/All-that-remains-REVISED-300dpi-print.jpg?resize=1024%2C726&ssl=1);
+  background-image: url(../Images/originBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -269,7 +269,7 @@
 /*Origin Part starts here*/
 #infoSelect2024{
   display: grid;
-  background-image: url(https://preview.redd.it/art-commission-high-elf-cleric-mistle-relaxing-v0-t9572rxthy281.jpg?width=1080&crop=smart&auto=webp&s=799e0f6836552ee21c61ec34c6fd86215d75770d);
+  background-image: url(../Images/infoBackground.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
