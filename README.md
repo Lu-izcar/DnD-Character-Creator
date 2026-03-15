@@ -18,3 +18,9 @@ Anyway, be using this to report my progress to myself.
 *Started this around 12/03 I think, but just now putting it here.
 
 *No sense on web design, the colors will stay ugly and you will deal with it.
+
+*New, but same day*
+
+*Now the program takes the images from the program itself instead of searching on the web
+
+*Added a favicon(the little icon on the website)
