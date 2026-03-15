@@ -1,0 +1,280 @@
+/*General starts here*/
+.hotBar{
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  background-color: rgb(30, 30, 30);
+  margin-bottom: 1vh;
+  border-bottom: 2px solid rgb(245, 165, 15);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hotBarButton{
+  width: 14vh;
+  height: 14vh;
+  border-radius: 50%;
+  text-justify: center;
+  text-align: center;
+  border: 2px solid rgb(245, 165, 15);
+  color: rgb(45, 0, 120);
+  background-color: white;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: color 0.25s, background-color 0.25s;
+}
+
+.hotBarButton:hover{
+  background-color: rgb(45, 0, 120);
+  color: white;
+}
+
+#returnMenu{
+  font-family: calibri;
+}
+
+#classButton2024{
+  font-family: calibri;
+}
+
+#speciesButton2024{
+  font-family: calibri;
+}
+
+#statsButton2024{
+  font-family: calibri;
+}
+
+#originButton2024{
+  font-family: calibri;
+}
+
+#infoButton2024{
+  font-family: calibri;
+}
+
+#classButton2014{
+  font-family: calibri;
+}
+
+#speciesButton2014{
+  font-family: calibri;
+}
+
+#statsButton2014{
+  font-family: calibri;
+}
+
+#originButton2014{
+  font-family: calibri;
+}
+
+#infoButton2014{
+  font-family: calibri;
+}
+
+.creatorBox{
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 12px;
+  height: 83vh;
+  width: 95vw;
+}
+/*General ends here*/
+
+/*Main Page starts here*/
+#mainPage{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  height: 100vh;
+  background-image: url(../Images/mainPageBackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mainPageCenter{
+  display: grid;
+  width: 70vw;
+  height: 98vh;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: rgba(20, 20, 20, 0.98);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  justify-content: center;
+}
+
+.titleMain{
+  font-size: 3vw;
+  justify-self: center;
+  font-family: Algerian;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.buttonMenu{
+  width: 15vw;
+  height: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  font-size: 1.5vw;
+  font-family: calibri;
+  border-radius: 5px;
+  border: 2px solid rgb(245, 165, 15);
+  color: white;
+  background-color: rgb(90, 0, 255);
+  transition: transform 0.1s;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.buttonMenu:hover{
+  box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(-2px, -2px);
+  transition: background-color 0.2s;
+}
+
+.buttonMenu:active{
+  background-color: rgb(43, 0, 122);
+}
+
+#versionButtons{
+  display: none;
+}
+
+.versionContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+#editCharacter{
+  font-family: calibri;
+}
+
+/*Main Page ends here*/
+
+/*2014 Version(5e) starts here*/
+/*Class Part starts here*/
+#classSelect2014{
+  display: grid;
+  background-image: url(../Images/classBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Class Part ends here*/
+
+/*Species Part starts here*/
+#speciesSelect2014{
+  display: grid;
+  background-image: url(../Images/speciesBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Species Part ends here*/
+
+/*Stats Part starts here*/
+#statsSelect2014{
+  display: grid;
+  background-image: url(../Images/statsBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Stats Part ends here*/
+
+/*Origin Part starts here*/
+#originSelect2014{
+  display: grid;
+  background-image: url(../Images/originBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Origin Part ends here*/
+
+/*Origin Part starts here*/
+#infoSelect2014{
+  display: grid;
+  background-image: url(../Images/infoBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*2014 Version(5e) ends here*/
+
+/*2024 Version(5.5e) starts here*/
+/*Class Part starts here*/
+#classSelect2024{
+  display: grid;
+  background-image: url(../Images/classBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Class Part ends here*/
+
+/*Species Part starts here*/
+#speciesSelect2024{
+  display: grid;
+  background-image: url(../Images/speciesBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Species Part ends here*/
+
+/*Stats Part starts here*/
+#statsSelect2024{
+  display: grid;
+  background-image: url(../Images/statsBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Stats Part ends here*/
+
+/*Origin Part starts here*/
+#originSelect2024{
+  display: grid;
+  background-image: url(../Images/originBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Origin Part ends here*/
+
+/*Origin Part starts here*/
+#infoSelect2024{
+  display: grid;
+  background-image: url(../Images/infoBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  justify-items: center;
+}
+/*Origin Part ends here*/
+/*2024 Version(5.5e) ends here*/
