@@ -26,3 +26,13 @@ Anyway, be using this to report my progress to myself.
 *Now the program takes the images from the program itself instead of searching on the web
 
 *Added a favicon(the little icon on the website)
+
+16/03/2026:
+
+*Added the buttons on the Class part on 2014 edition.
+
+*With that also added a Search Bar.
+
+*Nothing about that is working, just looks pretty.
+
+*Plan on doing the Javascript later.
