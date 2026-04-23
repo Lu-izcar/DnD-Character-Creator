@@ -36,3 +36,15 @@ Anyway, be using this to report my progress to myself.
 *Nothing about that is working, just looks pretty.
 
 *Plan on doing the Javascript later.
+
+23/04/2026
+
+*Removed the Search Bar(To annoying to make)
+
+*Made the Class buttons do animation when clicked
+
+*Discovered how to create the info buttons that tells your abilities(Havent done them yet, but I know how to:))
+
+*Might be going crazy
+
+*Found a group to play DnD with but missed session zero, Gonna play a beast Barbarian. No thoughts on this head.
