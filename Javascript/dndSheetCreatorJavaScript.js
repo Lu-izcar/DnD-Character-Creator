@@ -82,11 +82,21 @@ function createClass2014(){
   document.getElementById("infoSelect2014").style.display = 'none';
   document.getElementById("versionButtons").style.display = 'none';
 };
+
 //Class choice functions start here
+
 function createBarbarian2014(){
-  const exemplo = document.createElement("div");
-  exemplo.textContent = "You chose Barbarian";
-  rightSide[0].appendChild(exemplo);
+  const firstFeat = document.createElement("div");
+  const firstHeader = document.createElement("div");
+  const firstContent = document.createElement("div");
+  firstFeat.classList.add("featuresAccordion");
+  firstHeader.classList.add("featuresHeader");
+  firstContent.classList.add("featuresContent");
+  firstHeader.textContent = "Hit Points"
+  firstContent.textContent = "Hit Point Dice: D12 per Barbarian Level\nHit Points at Level 1: 12 + Con. modifier\nHit Points per additional Barbarian Level: D12 + your Con. modifier, or, 7 + your Con. modifier"
+  rightSide[0].appendChild(firstFeat);
+  firstFeat.appendChild(firstHeader)
+  firstFeat.appendChild(firstContent)
 };
 function createBard2014(){
 
