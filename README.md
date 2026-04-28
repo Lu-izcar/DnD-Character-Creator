@@ -48,3 +48,9 @@ Anyway, be using this to report my progress to myself.
 *Might be going crazy
 
 *Found a group to play DnD with but missed session zero, Gonna play a beast Barbarian. No thoughts on this head.
+
+28/04/2026
+
+*Starting to make the class buttons work
+
+*Did this at school, look at this when get home https://www.youtube.com/watch?v=LqpF8fkKOHU
