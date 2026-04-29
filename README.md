@@ -58,3 +58,9 @@ Anyway, be using this to report my progress to myself.
 29/04/2026
 
 *Made the JS a bit cleaner
+
+*The Barbarian button creates all feat buttons
+
+*They are all the same, have to edit each one later
+
+*have to implement the accordion
