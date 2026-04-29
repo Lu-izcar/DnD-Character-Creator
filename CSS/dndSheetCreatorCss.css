@@ -125,7 +125,12 @@
 }
 
 .featuresContent{
-  color: white;
+  padding: 15px;
+  display: none;
+}
+
+.active + .featuresContent{
+  display: block;
 }
 /*General ends here*/
 

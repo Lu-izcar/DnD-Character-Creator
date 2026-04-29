@@ -54,3 +54,7 @@ Anyway, be using this to report my progress to myself.
 *Starting to make the class buttons work
 
 *Did this at school, look at this when get home https://www.youtube.com/watch?v=LqpF8fkKOHU
+
+29/04/2026
+
+*Made the JS a bit cleaner
