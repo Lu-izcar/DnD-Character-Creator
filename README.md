@@ -67,8 +67,16 @@ Anyway, be using this to report my progress to myself.
 
 (Now at night)
 
-*Now the buttons each have their own text
+*Now the Headers each have their own text
 
 *Learned that I can "fetch" data from other files like a .txt
 
 *Gonna use that a lot. More Fucking files to work with
+
+30/04/2026
+
+*Now the contents each have theirs own text
+
+*Still cant figure out the accordion, gonna let that for another day
+
+*3 Days left until my first session with this new group, hope it all goes well

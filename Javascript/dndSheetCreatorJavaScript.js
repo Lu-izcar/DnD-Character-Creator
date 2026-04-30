@@ -67,14 +67,15 @@ function createClass2014(){
 function createBarbarian2014(){
   const feat = document.createElement("div");
   feat.classList.add("featuresAccordion");
-  const header = document.createElement("div");
+  const header = document.createElement("h6");
   header.classList.add("featuresHeader");
   const content = document.createElement("div");
   content.classList.add("featuresContent");
+  content.textContent = "Loading...";
   feat.appendChild(header);
   feat.appendChild(content);
   if (rightSide[0].childElementCount === 0){
-    for (let i = 0; i < 27; i++){
+    for (let i = 0; i < 25; i++){
     const clone = feat.cloneNode(true);
     rightSide[0].appendChild(clone);
     };
@@ -88,9 +89,16 @@ function createBarbarian2014(){
         header.textContent = barbarianHeaders[index];
         });
       });
-    
-  }
-  else{
+    fetch("../TextFiles/barbarianContents.txt")
+      .then(response => response.text())
+      .then(data => {
+        const barbarianContents = data.split("|");
+        featContents.forEach((content, index) => {
+        content.textContent = barbarianContents[index];
+        });
+        console.log(barbarianContents);
+      });
+  }else{
     rightSide[0].replaceChildren();
   };
   
