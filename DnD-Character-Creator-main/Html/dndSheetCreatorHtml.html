@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D Character Creator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../Images/DnDIcon.png">
+  <script src="../Javascript/dndSheetCreatorJavaScript.js" defer></script>
+  <link rel="stylesheet" href="../CSS/dndSheetCreatorCss.css">
+</head>
+<body style="margin: 0;">
+  
+  
+  <!--Here lies the main page of this shit-->
+  <div id="mainPage">
+    <div class="mainPageCenter">
+      <p class="titleMain">Welcome<br>to your Character Creator!</p>
+      <div style="display: flex; align-items:flex-start; height: 60vh">
+        <div class="versionContainer">
+          <button class="buttonMenu" onclick="choseVersion()">
+            Create New Character
+          </button>
+          <div id="versionButtons">
+            <button class="buttonMenu" onclick="createClass2014()" style="margin-bottom: 0; margin-top: 2vh;">
+              2014(5e)
+            </button>
+            <button class="buttonMenu" onclick="createClass2024()" style="margin-bottom: 0; margin-top: 2vh;">
+              2024(5.5e)
+            </button>
+          </div>
+        </div>
+        
+        <button class="buttonMenu">
+          Edit Character
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--Here the main page ends(Thanks God)-->
+
+  <!--2014 Version(5e) starting here-->
+  <div>
+    <!--Here the Class Selector starts-->
+    <div id="classSelect2014" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2014" onclick="createClass2014()">Class</button>
+        <button class="hotBarButton" id="speciesButton2014" onclick="createSpecies2014()">Race</button>
+        <button class="hotBarButton" id="statsButton2014" onclick="createStats2014()">Stats</button>
+        <button class="hotBarButton" id="originButton2014" onclick="createOrigin2014()">Back<br>ground</button>
+        <button class="hotBarButton" id="infoButton2014" onclick="createInfo2014()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <!--Selector side-->
+        <div class="leftBox">
+          <div>
+            <button id="barbarian2014" class="classButton" onclick="createBarbarian2014()"></button>
+            <p class="buttonText">Barbarian</p>
+          </div>
+          <div>
+            <button id="bard2014" class="classButton" onclick="createBard2014()"></button>
+            <p class='buttonText'>Bard</p>
+          </div>
+          <div>
+            <button id="cleric2014" class="classButton" onclick="createCleric2014()"></button>
+            <p class='buttonText'>Cleric</p>
+          </div>
+          <div>
+            <button id="druid2014" class="classButton" onclick="createDruid2014()"></button>
+            <p class='buttonText'>Druid</p>
+          </div>
+          <div>
+            <button id="fighter2014" class="classButton" onclick="createFighter2014()"></button>
+            <p class='buttonText'>Fighter</p>
+          </div>
+          <div>
+            <button id="monk2014" class="classButton" onclick="createMonk2014()"></button>
+            <p class='buttonText'>Monk</p>
+          </div>
+          <div>
+            <button id="paladin2014" class="classButton" onclick="createPaladin2014()"></button>
+            <p class='buttonText'>Paladin</p>
+          </div>
+          <div>
+            <button id="ranger2014" class="classButton" onclick="createRanger2014()"></button>
+            <p class='buttonText'>Ranger</p>
+          </div>
+          <div>
+            <button id="rogue2014" class="classButton" onclick="createRogue2014()"></button>
+            <p class='buttonText'>Rogue</p>
+          </div>
+          <div>
+            <button id="sorcerer2014" class="classButton" onclick="createSorcerer2014()"></button>
+            <p class='buttonText'>Sorcerer</p>
+          </div>
+          <div>
+            <button id="warlock2014" class="classButton" onclick="createWarlock2014()"></button>
+            <p class='buttonText'>Warlock</p>
+          </div>
+          <div>
+            <button id="wizard2014" class="classButton" onclick="createWizard2014()"></button>
+            <p class='buttonText'>Wizard</p>
+          </div>
+          <div>
+            <button id="artificer2014" class="classButton" onclick="createArtificer2014()"></button>
+            <p class='buttonText'>Artificer</p>
+          </div>
+        </div>
+        <div class="rightBox">
+
+        </div>
+        <div><!--Information side-->
+
+        </div>
+      </div>
+    </div>
+    <!--Here the Class Selector ends-->
+
+    <!--Here the Species Selector starts-->
+    <div id="speciesSelect2014" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2014" onclick="createClass2014()">Class</button>
+        <button class="hotBarButton" id="speciesButton2014" onclick="createSpecies2014()">Race</button>
+        <button class="hotBarButton" id="statsButton2014" onclick="createStats2014()">Stats</button>
+        <button class="hotBarButton" id="originButton2014" onclick="createOrigin2014()">Back<br>ground</button>
+        <button class="hotBarButton" id="infoButton2014" onclick="createInfo2014()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+
+        </div>
+        
+      </div>
+    </div>
+    <!--Here the Species Selector ends-->
+
+    <!--Here the Stats Selector starts-->
+    <div id="statsSelect2014" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2014" onclick="createClass2014()">Class</button>
+        <button class="hotBarButton" id="speciesButton2014" onclick="createSpecies2014()">Race</button>
+        <button class="hotBarButton" id="statsButton2014" onclick="createStats2014()">Stats</button>
+        <button class="hotBarButton" id="originButton2014" onclick="createOrigin2014()">Back<br>ground</button>
+        <button class="hotBarButton" id="infoButton2014" onclick="createInfo2014()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Species Selector ends-->
+
+    <!--Here the Origin Selector starts-->
+    <div id="originSelect2014" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2014" onclick="createClass2014()">Class</button>
+        <button class="hotBarButton" id="speciesButton2014" onclick="createSpecies2014()">Race</button>
+        <button class="hotBarButton" id="statsButton2014" onclick="createStats2014()">Stats</button>
+        <button class="hotBarButton" id="originButton2014" onclick="createOrigin2014()">Back<br>ground</button>
+        <button class="hotBarButton" id="infoButton2014" onclick="createInfo2014()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Origin Selector ends-->
+
+    <!--Here the Info Selector starts-->
+    <div id="infoSelect2014" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2014" onclick="createClass2014()">Class</button>
+        <button class="hotBarButton" id="speciesButton2014" onclick="createSpecies2014()">Race</button>
+        <button class="hotBarButton" id="statsButton2014" onclick="createStats2014()">Stats</button>
+        <button class="hotBarButton" id="originButton2014" onclick="createOrigin2014()">Back<br>ground</button>
+        <button class="hotBarButton" id="infoButton2014" onclick="createInfo2014()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--2014 Version(5e) ending here-->
+  
+  <!--2024 Version(5.5e) starting here-->
+  <div>
+    <!--Here the Class Selector starts-->
+    <div id="classSelect2024" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2024" onclick="createClass2024()">Class</button>
+        <button class="hotBarButton" id="speciesButton2024" onclick="createSpecies2024()">Species</button>
+        <button class="hotBarButton" id="statsButton2024" onclick="createStats2024()">Stats</button>
+        <button class="hotBarButton" id="originButton2024" onclick="createOrigin2024()">Origin</button>
+        <button class="hotBarButton" id="infoButton2024" onclick="createInfo2024()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Class Selector ends-->
+
+    <!--Here the Species Selector starts-->
+    <div id="speciesSelect2024" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2024" onclick="createClass2024()">Class</button>
+        <button class="hotBarButton" id="speciesButton2024" onclick="createSpecies2024()">Species</button>
+        <button class="hotBarButton" id="statsButton2024" onclick="createStats2024()">Stats</button>
+        <button class="hotBarButton" id="originButton2024" onclick="createOrigin2024()">Origin</button>
+        <button class="hotBarButton" id="infoButton2024" onclick="createInfo2024()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Species Selector ends-->
+
+    <!--Here the Stats Selector starts-->
+    <div id="statsSelect2024" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2024" onclick="createClass2024()">Class</button>
+        <button class="hotBarButton" id="speciesButton2024" onclick="createSpecies2024()">Species</button>
+        <button class="hotBarButton" id="statsButton2024" onclick="createStats2024()">Stats</button>
+        <button class="hotBarButton" id="originButton2024" onclick="createOrigin2024()">Origin</button>
+        <button class="hotBarButton" id="infoButton2024" onclick="createInfo2024()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Species Selector ends-->
+
+    <!--Here the Origin Selector starts-->
+    <div id="originSelect2024" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2024" onclick="createClass2024()">Class</button>
+        <button class="hotBarButton" id="speciesButton2024" onclick="createSpecies2024()">Species</button>
+        <button class="hotBarButton" id="statsButton2024" onclick="createStats2024()">Stats</button>
+        <button class="hotBarButton" id="originButton2024" onclick="createOrigin2024()">Origin</button>
+        <button class="hotBarButton" id="infoButton2024" onclick="createInfo2024()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Origin Selector ends-->
+
+    <!--Here the Info Selector starts-->
+    <div id="infoSelect2024" style="display: none;">
+      <div class="hotBar">
+        <button class="hotBarButton" id="classButton2024" onclick="createClass2024()">Class</button>
+        <button class="hotBarButton" id="speciesButton2024" onclick="createSpecies2024()">Species</button>
+        <button class="hotBarButton" id="statsButton2024" onclick="createStats2024()">Stats</button>
+        <button class="hotBarButton" id="originButton2024" onclick="createOrigin2024()">Origin</button>
+        <button class="hotBarButton" id="infoButton2024" onclick="createInfo2024()">Info</button>
+        <button class="hotBarButton" id="returnMenu" onclick="returnMenu()">Menu</button>
+      </div>
+      <div class="creatorBox">
+        <div class="leftBox">
+
+        </div>
+
+        <div class="rightBox">
+          
+        </div>
+      </div>
+    </div>
+    <!--Here the Info Selector ends-->
+  </div>
+  <!--2024 Version(5.5e) ending here-->
+
+</body>
+</html>
