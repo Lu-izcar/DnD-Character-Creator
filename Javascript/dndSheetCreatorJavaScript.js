@@ -11,6 +11,7 @@ const species2024 = document.getElementById("speciesSelect2024");
 const stats2024 = document.getElementById("statsSelect2024");
 const origin2024 = document.getElementById("originSelect2024");
 const info2024 = document.getElementById("infoSelect2024");
+
 /*
 Index for right sides:
 0 - Class2014
@@ -25,37 +26,6 @@ Index for right sides:
 9 - Info2024
 */
 //Variables end here
-window.addEventListener("load", () => {
-  const Imagens = [
-    "Html/Images/artificerBack.jpeg",
-    "Html/Images/barbarianBack.jpeg",
-    "Html/Images/bardBack.jpeg",
-    "Html/Images/classBackground.jpg",
-    "Html/Images/clericBack.jpeg",
-    "Html/Images/DnDIcon.png",
-    "Html/Images/druidBack.jpeg",
-    "Html/Images/fighterBack.jpeg",
-    "Html/Images/infoBackground.jpg",
-    "Html/Images/magnifyingLenses.png",
-    "Html/Images/mainPageBackground.jpg",
-    "Html/Images/monkBack.jpeg",
-    "Html/Images/originBackground.jpg",
-    "Html/Images/paladinBack.jpeg",
-    "Html/Images/rangerBack.jpeg",
-    "Html/Images/rogueBack.jpeg",
-    "Html/Images/sorcererBack.jpeg",
-    "Html/Images/speciesBackground.jpg",
-    "Html/Images/statsBackground.jpg",
-    "Html/Images/warlockBack.jpeg",
-    "Html/Images/wizardBack.jpeg"
-  ];
-
-  Imagens.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
-});
-
 function returnMenu(){
   MainPage.style.display = 'grid';
   class2014.style.display = 'none';
@@ -103,23 +73,27 @@ function createBarbarian2014(){
   content.classList.add("featuresContent");
   feat.appendChild(header);
   feat.appendChild(content);
-  header.textContent = "Header";
-  content.textContent = "Content";
-  for (let i = 0; i < 27; i++){
+  if (rightSide[0].childElementCount === 0){
+    for (let i = 0; i < 27; i++){
     const clone = feat.cloneNode(true);
     rightSide[0].appendChild(clone);
+    };
+    featHeaders = rightSide[0].querySelectorAll(".featuresHeader");
+    featContents = rightSide[0].querySelectorAll(".featuresContent");
+    fetch("../TextFiles/barbarianHeaders.txt")
+      .then(response => response.text())
+      .then(data => {
+        const barbarianHeaders = data.split("\n");
+        featHeaders.forEach((header, index) => {
+        header.textContent = barbarianHeaders[index];
+        });
+      });
+    
+  }
+  else{
+    rightSide[0].replaceChildren();
   };
-  const firstFeat = document.createElement("div");
-  const firstHeader = document.createElement("div");
-  const firstContent = document.createElement("div");
-  firstFeat.classList.add("featuresAccordion");
-  firstHeader.classList.add("featuresHeader");
-  firstContent.classList.add("featuresContent");
-  firstHeader.textContent = "Hit Points";
-  firstContent.textContent = "Hit Point Dice: D12 per Barbarian Level\nHit Points at Level 1: 12 + Con. modifier\nHit Points per additional Barbarian Level: D12 + your Con. modifier, or, 7 + your Con. modifier";
-  rightSide[0].appendChild(firstFeat);
-  firstFeat.appendChild(firstHeader);
-  firstFeat.appendChild(firstContent);
+  
 };
 function createBard2014(){
 
@@ -176,7 +150,7 @@ function createStats2014(){
   species2014.style.display = 'none';
   stats2014.style.display = 'block';
   origin2014.style.display = 'none';
-  ocument.getElementById("infoSelect2014").style.display = 'none';
+  info2014.style.display = 'none';
 };
 
 function createOrigin2014(){

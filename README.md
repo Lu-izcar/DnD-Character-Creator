@@ -63,4 +63,12 @@ Anyway, be using this to report my progress to myself.
 
 *They are all the same, have to edit each one later
 
-*have to implement the accordion
+*Have to implement the accordion
+
+(Now at night)
+
+*Now the buttons each have their own text
+
+*Learned that I can "fetch" data from other files like a .txt
+
+*Gonna use that a lot. More Fucking files to work with
