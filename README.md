@@ -86,3 +86,5 @@ Anyway, be using this to report my progress to myself.
 *FINALLY THE ACCORDION IS WORKING
 
 *Made some of the content bold for it is prettier
+
+*Made possible to select a level and now it only shows the features of the level you chose

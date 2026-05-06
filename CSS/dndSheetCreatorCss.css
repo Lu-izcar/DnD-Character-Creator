@@ -303,7 +303,7 @@
   background-size: cover;
 }
 
-.classButton{
+.optionButton{
   border: 5px solid rgb(245, 165, 15);
   height: 13vw;
   width: 13vw;
@@ -313,17 +313,25 @@
   margin-top: 1vh;
 }
 
-.classButton:hover{
+.optionButton:hover{
   box-shadow: 5px 5px 1px 0px rgb(0, 0, 0);
   transform: translate(-5px, -5px);
 }
 
-.classButton:active{
+.optionButton:active{
   box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
   transform: translate(0px, 0px);
   filter: brightness(0.8);
 }
 
+#level{
+  justify-self: end;
+  margin-right: 30px;
+}
+.levelLabel{
+  color: white;
+  padding-right: 5px;
+}
 /*Class Part ends here*/
 
 /*Species Part starts here*/

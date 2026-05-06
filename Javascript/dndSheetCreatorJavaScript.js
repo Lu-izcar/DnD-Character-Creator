@@ -94,15 +94,206 @@ function createBarbarian2014(){
 
   feat.appendChild(header);
   feat.appendChild(content);
+
+
   if (rightSide[0].childElementCount === 0){
+    const wrapper = document.createElement("div");
+    wrapper.style.justifySelf = "end";
+    const label = document.createElement("label");
+    label.textContent = "Level: ";
+    label.htmlFor = "level";
+    label.classList.add("levelLabel");
+    const select = document.createElement("select");
+    rightSide[0].appendChild(select);
+    select.id = "level";
+    wrapper.appendChild(label);
+    wrapper.appendChild(select);
+    rightSide[0].appendChild(wrapper);
+    for (let i = 1; i <= 20; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      select.appendChild(option);
+    }
+    select.addEventListener("change", () => {
+      if (select.value === "1") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=4){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "2") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=6){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "3") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=7){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "4") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=8){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "5") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=10){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "6") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=11){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "7") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=12){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "8") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=13){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "9") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=14){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "10") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=15){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "11") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=16){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "12") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=17){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "13") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=18){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "14") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=19){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "15") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=20){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "16") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=21){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "17") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=22){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "18") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=23){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "19") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=24){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "20") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=25){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      }
+    });
+
     for (let i = 0; i < 25; i++){
-    const clone = feat.cloneNode(true);
-    const button = clone.querySelector(".accordion-button");
-    const content = clone.querySelector(".accordion-collapse");
-    button.setAttribute("data-bs-target", `#panelStayOpen-collapse${i}`);
-    content.id = `panelStayOpen-collapse${i}`;
-    rightSide[0].appendChild(clone);
+      const clone = feat.cloneNode(true);
+      const button = clone.querySelector(".accordion-button");
+      const content = clone.querySelector(".accordion-collapse");
+      button.setAttribute("data-bs-target", `#panelStayOpen-collapse${i}`);
+      content.id = `panelStayOpen-collapse${i}`;
+      rightSide[0].appendChild(clone);
     };
+    for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=4){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
     featButtons = rightSide[0].querySelectorAll(".accordion-button");
     featContents = rightSide[0].querySelectorAll(".accordion-body");
     fetch("../TextFiles/barbarianHeaders.txt")
@@ -125,7 +316,7 @@ function createBarbarian2014(){
   }else{
     rightSide[0].replaceChildren();
   };
-  
+  console.log(rightSide[0].childElementCount);
 };
 function createBard2014(){
 
