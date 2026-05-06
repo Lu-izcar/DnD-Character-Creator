@@ -122,9 +122,10 @@
   background-color: rgb(45, 75, 100);
   width: 100%;
   padding: 15px;
-  border: none;
+  border: none!important;
   cursor: pointer;
   margin: 0;
+  color: white!important;
 }
 
 .featuresContent{
@@ -437,4 +438,39 @@
 }
 /*Info Part ends here*/
 
+/*Accordion Styles*/
+.accordion-button:not(.collapsed) {
+  color: color: white!important;
+  background-color: rgb(45, 75, 100)!important;
+  border-radius: 0px!important;
+}
+.accordion-item {
+  border: none !important;
+}
+.accordion-item,
+.accordion-button,
+.accordion-collapse {
+  border-radius: 5px !important;
+}
+.accordion-item {
+  border: none !important;
+  background: transparent !important;
+}
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  border-radius: 5px !important;
+}
+.accordion-collapse,
+.accordion-body {
+  border-radius: 0 0 5px 5px !important;
+}
+.accordion-button:not(.collapsed) {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+strong {
+  font-weight: bold !important;
+}
 /*2024 Version(5.5e) ends here*/

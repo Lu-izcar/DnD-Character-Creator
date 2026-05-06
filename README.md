@@ -80,3 +80,9 @@ Anyway, be using this to report my progress to myself.
 *Still cant figure out the accordion, gonna let that for another day
 
 *3 Days left until my first session with this new group, hope it all goes well
+
+06/05/2026
+
+*FINALLY THE ACCORDION IS WORKING
+
+*Made some of the content bold for it is prettier

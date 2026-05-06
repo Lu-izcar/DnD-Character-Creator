@@ -26,6 +26,13 @@ Index for right sides:
 9 - Info2024
 */
 //Variables end here
+document.addEventListener("DOMContentLoaded", function() {
+  rightSide.forEach(side => {
+    side.classList.add("accordion");
+    side.id = 'accordionPanelsStayOpenExample';
+  });
+});
+
 function returnMenu(){
   MainPage.style.display = 'grid';
   class2014.style.display = 'none';
@@ -67,26 +74,43 @@ function createClass2014(){
 function createBarbarian2014(){
   const feat = document.createElement("div");
   feat.classList.add("featuresAccordion");
+  feat.classList.add("accordion-item");
+
   const header = document.createElement("h6");
-  header.classList.add("featuresHeader");
+  header.classList.add("accordion-header");
+  const headerButton = document.createElement("button");
+  headerButton.classList.add("accordion-button", "collapsed");
+  headerButton.classList.add("featuresHeader");
+  headerButton.type = "button";
+  headerButton.setAttribute("data-bs-toggle", "collapse");
+  header.appendChild(headerButton);
+
   const content = document.createElement("div");
-  content.classList.add("featuresContent");
-  content.textContent = "Loading...";
+  content.classList.add("accordion-collapse", "collapse");
+  const contentInside = document.createElement("div");
+  contentInside.classList.add("accordion-body");
+  contentInside.classList.add("featuresContent");
+  content.appendChild(contentInside);
+
   feat.appendChild(header);
   feat.appendChild(content);
   if (rightSide[0].childElementCount === 0){
     for (let i = 0; i < 25; i++){
     const clone = feat.cloneNode(true);
+    const button = clone.querySelector(".accordion-button");
+    const content = clone.querySelector(".accordion-collapse");
+    button.setAttribute("data-bs-target", `#panelStayOpen-collapse${i}`);
+    content.id = `panelStayOpen-collapse${i}`;
     rightSide[0].appendChild(clone);
     };
-    featHeaders = rightSide[0].querySelectorAll(".featuresHeader");
-    featContents = rightSide[0].querySelectorAll(".featuresContent");
+    featButtons = rightSide[0].querySelectorAll(".accordion-button");
+    featContents = rightSide[0].querySelectorAll(".accordion-body");
     fetch("../TextFiles/barbarianHeaders.txt")
       .then(response => response.text())
       .then(data => {
         const barbarianHeaders = data.split("\n");
-        featHeaders.forEach((header, index) => {
-        header.textContent = barbarianHeaders[index];
+        featButtons.forEach((button, index) => {
+        button.textContent = barbarianHeaders[index];
         });
       });
     fetch("../TextFiles/barbarianContents.txt")
@@ -94,7 +118,7 @@ function createBarbarian2014(){
       .then(data => {
         const barbarianContents = data.split("|");
         featContents.forEach((content, index) => {
-        content.textContent = barbarianContents[index];
+        content.innerHTML = barbarianContents[index];
         });
         console.log(barbarianContents);
       });
