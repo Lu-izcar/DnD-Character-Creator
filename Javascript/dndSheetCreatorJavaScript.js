@@ -327,7 +327,253 @@ function createBarbarian2014(){
   console.log(rightSide[0].childElementCount);
 };
 function createBard2014(){
+  const feat = document.createElement("div");
+  feat.classList.add("featuresAccordion");
+  feat.classList.add("accordion-item");
 
+  const header = document.createElement("h6");
+  header.classList.add("accordion-header");
+  const headerButton = document.createElement("button");
+  headerButton.classList.add("accordion-button", "collapsed");
+  headerButton.classList.add("featuresHeader");
+  headerButton.type = "button";
+  headerButton.setAttribute("data-bs-toggle", "collapse");
+  header.appendChild(headerButton);
+
+  const content = document.createElement("div");
+  content.classList.add("accordion-collapse", "collapse");
+  const contentInside = document.createElement("div");
+  contentInside.classList.add("accordion-body");
+  contentInside.classList.add("featuresContent");
+  content.appendChild(contentInside);
+
+  feat.appendChild(header);
+  feat.appendChild(content);
+
+
+  if (rightSide[0].childElementCount === 0 || chosenClass2014 !== 1){
+    rightSide[0].replaceChildren();
+    chosenClass2014 = 1;
+    const wrapper = document.createElement("div");
+    wrapper.style.justifySelf = "end";
+    const label = document.createElement("label");
+    label.textContent = "Level: ";
+    label.htmlFor = "level";
+    label.classList.add("levelLabel");
+    const select = document.createElement("select");
+    rightSide[0].appendChild(select);
+    select.id = "level";
+    wrapper.appendChild(label);
+    wrapper.appendChild(select);
+    rightSide[0].appendChild(wrapper);
+    for (let i = 1; i <= 20; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      select.appendChild(option);
+    }
+    select.addEventListener("change", () => {
+      if (select.value === "1") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=4){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "2") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=6){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "3") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=9){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "4") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=10){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "5") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=13){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "6") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=15){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "7") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=16){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "8") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=17){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "9") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=19){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "10") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=22){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "11") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=23){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "12") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=24){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "13") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=26){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "14") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=28){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "15") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=30){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "16") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=31){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "17") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=33){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "18") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=34){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "19") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=35){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      } else if (select.value === "20") {
+        for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=36){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+      }
+    });
+
+    for (let i = 0; i < 36; i++){
+      const clone = feat.cloneNode(true);
+      const button = clone.querySelector(".accordion-button");
+      const content = clone.querySelector(".accordion-collapse");
+      button.setAttribute("data-bs-target", `#panelStayOpen-collapse${i}`);
+      content.id = `panelStayOpen-collapse${i}`;
+      rightSide[0].appendChild(clone);
+    };
+    for (let i = 1; i < rightSide[0].children.length; i++){
+          if (i<=4){
+            rightSide[0].children[i].style.display = "block";
+          }else{
+            rightSide[0].children[i].style.display = "none";
+          }
+        }
+    featButtons = rightSide[0].querySelectorAll(".accordion-button");
+    featContents = rightSide[0].querySelectorAll(".accordion-body");
+    fetch("../TextFiles/Headers/bardHeaders.txt")
+      .then(response => response.text())
+      .then(data => {
+        const bardHeaders = data.split("\n");
+        featButtons.forEach((button, index) => {
+        button.textContent = bardHeaders[index];
+        });
+      });
+    fetch("../TextFiles/Contents/bardContents.txt")
+      .then(response => response.text())
+      .then(data => {
+        const bardContents = data.split("|");
+        featContents.forEach((content, index) => {
+        content.innerHTML = bardContents[index];
+        });
+        console.log(bardContents);
+      });
+  }else{
+    rightSide[0].replaceChildren();
+  };
+  console.log(rightSide[1].childElementCount);
 };
 function createCleric2014(){
 

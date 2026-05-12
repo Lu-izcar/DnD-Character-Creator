@@ -1,0 +1,36 @@
+Hit Points
+Proficiencies
+Level 1: Bardic Inspiration
+Level 1: Spellcasting
+Level 2: Jack of All Trades
+Level 2: Song of Rest (d6)
+Level 3: Bard College
+Level 3: Expertise
+Level 3: 2º Level Spells
+Level 4: Ability Score Improvement
+Level 5: Bardic Inspiration (d8)
+Level 5: Font o Inspiration
+Level 5: 3º Level Spells
+Level 6: Countercharm
+Level 6: Bard College Feature
+Level 7: 4º Level Spells
+Level 8: Ability Score Improvement
+Level 9: Song of Rest (d8)
+Level 9: 5º Level Spells
+Level 10: Bardic Inspiration (d10)
+Level 10: Expertise
+Level 10: Magical Secrets
+Level 11: 6º Level Spells
+Level 12: Ability Score Improvement
+Level 13: Song of Rest (d10)
+Level 13: 7º Level Spells
+Level 14: Bard College Feature
+Level 14: Magical Secrets
+Level 15: Bardic Inspiration (d12)
+Level 15: 8º Level Spells
+Level 16: Ability Score Improvement
+Level 17: Song of Rest (d12)
+Level 17: 9º Level Spells
+Level 18: Magical Secrets
+Level 19: Ability Score Improvement
+Level 20: Superior Inspiration

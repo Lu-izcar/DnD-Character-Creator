@@ -88,3 +88,9 @@ Anyway, be using this to report my progress to myself.
 *Made some of the content bold for it is prettier
 
 *Made possible to select a level and now it only shows the features of the level you chose
+
+12/05/2026
+
+*Added the Bard
+
+*Need to put the <strong> Tags for it to be more appealing
