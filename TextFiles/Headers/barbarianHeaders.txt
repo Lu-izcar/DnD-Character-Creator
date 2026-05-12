@@ -1,0 +1,25 @@
+Hit Points
+Proficiencies
+Level 1: Rage
+Level 1: Unarmored Defense
+Level 2: Danger Sense
+Level 2: Reckless Attack
+Level 3: Primal Path
+Level 4: Ability Score Improvement
+Level 5: Extra Attack
+Level 5: Fast Movement
+Level 6: Path Feature
+Level 7: Feral Instinct
+Level 8: Ability Score Improvement
+Level 9: Brutal Critical (1 die)
+Level 10: Path feature
+Level 11: Relentless Rage
+Level 12: Ability Score Improvement
+Level 13: Brutal Critical (2 dice)
+Level 14: Path feature
+Level 15: Persistent Rage
+Level 16: Ability Score Improvement
+Level 17: Brutal Critical (3 dice)
+Level 18: Indomitable Might
+Level 19: Ability Score Improvement
+Level 20: Primal Champion

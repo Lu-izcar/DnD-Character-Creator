@@ -11,19 +11,22 @@ const species2024 = document.getElementById("speciesSelect2024");
 const stats2024 = document.getElementById("statsSelect2024");
 const origin2024 = document.getElementById("originSelect2024");
 const info2024 = document.getElementById("infoSelect2024");
-
+var chosenClass2014 = 0;
 /*
-Index for right sides:
-0 - Class2014
-1 - Species2014
-2 - Stats2014
-3 - Origin2014
-4 - Info2014
-5 - Class2024
-6 - Species2024
-7 - Stats2024
-8 - Origin2024
-9 - Info2024
+Index for right sides:    Index for Classes(2014):
+0 - Class2014             0 - Barbarian
+1 - Species2014           1 - Bard
+2 - Stats2014             2 - Cleric
+3 - Origin2014            3 - Druid
+4 - Info2014              4 - Fighter
+5 - Class2024             5 - Monk
+6 - Species2024           6 - Paladin
+7 - Stats2024             7 - Ranger
+8 - Origin2024            8 - Rogue
+9 - Info2024              9 - Sorcerer
+.                         10 - Warlock
+.                         11 - Wizard
+.                         12 - Artificer
 */
 //Variables end here
 document.addEventListener("DOMContentLoaded", function() {
@@ -45,6 +48,9 @@ function returnMenu(){
   stats2024.style.display = 'none';
   origin2024.style.display = 'none';
   info2024.style.display = 'none';
+  for (let i = 0; i < rightSide.length; i++){
+    rightSide[i].replaceChildren();
+  }
 };
 
 function choseVersion(){
@@ -96,7 +102,9 @@ function createBarbarian2014(){
   feat.appendChild(content);
 
 
-  if (rightSide[0].childElementCount === 0){
+  if (rightSide[0].childElementCount === 0 || chosenClass2014 !== 0){
+    rightSide[0].replaceChildren();
+    chosenClass2014 = 0;
     const wrapper = document.createElement("div");
     wrapper.style.justifySelf = "end";
     const label = document.createElement("label");
@@ -296,7 +304,7 @@ function createBarbarian2014(){
         }
     featButtons = rightSide[0].querySelectorAll(".accordion-button");
     featContents = rightSide[0].querySelectorAll(".accordion-body");
-    fetch("../TextFiles/barbarianHeaders.txt")
+    fetch("../TextFiles/Headers/barbarianHeaders.txt")
       .then(response => response.text())
       .then(data => {
         const barbarianHeaders = data.split("\n");
@@ -304,7 +312,7 @@ function createBarbarian2014(){
         button.textContent = barbarianHeaders[index];
         });
       });
-    fetch("../TextFiles/barbarianContents.txt")
+    fetch("../TextFiles/Contents/barbarianContents.txt")
       .then(response => response.text())
       .then(data => {
         const barbarianContents = data.split("|");
@@ -364,8 +372,43 @@ function createSpecies2014(){
   stats2014.style.display = 'none';
   origin2014.style.display = 'none';
   info2014.style.display = 'none';
+};
+//Species choice functions start here
+function createDwarf2014(){
 
 };
+function createElf2014(){
+
+};
+
+function createHalfling2014(){
+
+};
+
+function createHuman2014(){
+
+};
+
+function createDragonborn2014(){
+
+};
+
+function createGnome2014(){
+
+};
+
+function createHalfElf2014(){
+
+};
+
+function createHalfOrc2014(){
+
+};
+
+function createTiefling2014(){
+
+};
+//Species choice functions end here
 
 function createStats2014(){
   MainPage.style.display = 'none';
